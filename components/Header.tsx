@@ -5,6 +5,7 @@ import { BiSearch } from "react-icons/bi";
 import { HiHome } from "react-icons/hi";
 import { RxCaretLeft, RxCaretRight } from "react-icons/rx";
 import { twMerge } from "tailwind-merge";
+import Button from "./Button";
 
 interface HeaderProps {
   children: React.ReactNode;
@@ -30,7 +31,7 @@ const Header: React.FC<HeaderProps> = ({ children, className }) => {
             mb-4
             flex
             items-center
-            jusitfy-between
+            justify-between
         "
       >
         <div
@@ -90,6 +91,20 @@ const Header: React.FC<HeaderProps> = ({ children, className }) => {
           >
             <BiSearch size={30} className="text-black" />
           </button>
+        </div>
+        <div
+          className="
+            flex
+            justify-between
+            items-center
+            gap-x-4
+        "
+        >
+          <>
+            <div>
+              <Button>Sign Up</Button>
+            </div>
+          </>
         </div>
       </div>
     </div>
