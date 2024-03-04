@@ -1,5 +1,5 @@
 import Image from "next/image";
 
 export default function Home() {
-  return <div>Hello Music</div>;
+  return <div className="text-green-500">Main Section</div>;
 }
